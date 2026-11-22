@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atividades para casa - Luiza Busnardo</title>
+<script>
+  if (!sessionStorage.getItem('lb_sessao_ativa')) {
+    window.location.replace('index.html');
+  }
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Fraunces:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/atividades.css">
+</head>
+<body>
+
+<header class="topo">
+    <nav id="menu-principal" class="menu-publico" aria-label="Principal">
+      <a class="logo-menu" href="inicio.html" aria-label="Ir para a página inicial">
+        <img src="imagens/logosite.png" alt="Luiza Busnardo">
+      </a>
+      <a href="inicio.html">Início</a>
+      <a href="atividades.html" aria-current="page">Atividades</a>
+      <a href="#ideias-titulo">Materiais</a>
+      <a href="inicio.html#sobre">Sobre</a>
+      <a id="usuarioMenu" class="usuario-menu" href="inicio.html" hidden><span aria-hidden="true">👤</span> <span id="nomeUsuario"></span></a>
+      <a id="sairMenu" class="conta-1" href="index.html" hidden>Sair</a>
+    </nav>
+</header>
+
+<main class="container">
+  <nav class="migalhas" aria-label="Você está em">
+    <a href="inicio.html">Início</a> / <a href="atividades.html">Atividades</a> / Atividades para casa
+  </nav>
+
+  <section class="hero-titulo">
+    <div>
+      <h1>Atividades para casa</h1>
+      <p>Propostas simples para fazer em família, com materiais que você já tem em casa. Escolha uma, reserve alguns minutos e converse com as crianças.</p>
+    </div>
+    <aside class="aviso-topo">
+      <strong>Como usar esta página</strong>
+      Filtre por tema, abra o material e imprima ou use na tela.
+    </aside>
+  </section>
+
+  <section class="destaque" aria-labelledby="destaque-titulo">
+    <figure>
+      <img src="imagens/foto principal.jpg" alt="Espaço acolhedor de atendimento">
+      <figcaption>“Que história cabe neste parque?”</figcaption>
+    </figure>
+    <div class="texto">
+      <h2 id="destaque-titulo">Uma imagem, muitas histórias</h2>
+      <ul>
+        <li tabindex="0"><strong>1º- Observe</strong>Olhem juntos para a imagem em silêncio por um minuto.</li>
+        <li tabindex="0"><strong>2º- Pergunte</strong>O que está acontecendo? Quem são essas pessoas?</li>
+        <li tabindex="0"><strong>3º- Invente</strong>Cada pessoa acrescenta uma frase à história.</li>
+      </ul>
+      <p class="nota">Não existe resposta certa. O importante é conversar e ouvir as ideias das crianças.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="ideias-titulo">
+    <div class="secao-cab">
+      <h2 id="ideias-titulo">Ideias para compartilhar</h2>
+      <input class="busca" type="search" placeholder="Buscar atividade" aria-label="Buscar atividade">
+    </div>
+    <div class="filtros" role="group" aria-label="Filtrar por tema">
+      <button aria-pressed="true">Todas</button>
+      <button aria-pressed="false">Arte</button>
+      <button aria-pressed="false">Sentidos</button>
+      <button aria-pressed="false">Conversa</button>
+      <button aria-pressed="false">Desenho</button>
+      <button aria-pressed="false">Natureza</button>
+      <button aria-pressed="false">Escrita</button>
+    </div>
+    <p class="contagem" aria-live="polite">6 atividades</p>
+
+    <div class="grade">
+  <a class="cartao" href="#destaque-titulo"><img class="img" src="imagens/consultorio.jpg" alt="História em quadrinhos"><div class="corpo"><span class="etiqueta">Arte</span><h3>Histórias em imagens</h3><p>Crie uma sequência de desenhos que conta o seu dia.</p><div class="meta"><span>15 min</span><span>A partir de 4 anos</span></div></div></a>
+  <a class="cartao" href="#destaque-titulo"><img class="img" src="imagens/perfil.jpg" alt="Pessoa demonstrando emoções"><div class="corpo"><span class="etiqueta">Sentidos</span><h3>O que estou sentindo?</h3><p>Cartas de emoções para conversar sobre o que cada um sente.</p><div class="meta"><span>10 min</span><span>A partir de 3 anos</span></div></div></a>
+  <a class="cartao" href="#destaque-titulo"><img class="img" src="imagens/foto principal.jpg" alt="Objetos do cotidiano"><div class="corpo"><span class="etiqueta">Conversa</span><h3>O que temos por aqui?</h3><p>Nomeie objetos do cotidiano e conversem sobre onde ficam e para que servem.</p><div class="meta"><span>10 min</span><span>Toda a família</span></div></div></a>
+  <a class="cartao" href="#destaque-titulo"><img class="img" src="imagens/consultorio.jpg" alt="Espaço para desenho e criatividade"><div class="corpo"><span class="etiqueta">Desenho</span><h3>Lápis e caminhos</h3><p>Siga traços e labirintos para treinar a atenção e a coordenação.</p><div class="meta"><span>20 min</span><span>A partir de 5 anos</span></div></div></a>
+  <a class="cartao" href="#destaque-titulo"><img class="img" src="imagens/iuli-horizontal.jpg" alt="Passeio de exploração"><div class="corpo"><span class="etiqueta">Natureza</span><h3>Letras e vizinhança</h3><p>Procure letras e formas durante um passeio pelo bairro.</p><div class="meta"><span>30 min</span><span>A partir de 5 anos</span></div></div></a>
+  <a class="cartao" href="#destaque-titulo"><img class="img" src="imagens/wallace-horizontal.jpg" alt="Crianças compartilhando ideias"><div class="corpo"><span class="etiqueta">Escrita</span><h3>Lista de curiosidades</h3><p>Anote perguntas que surgem no dia e descubram as respostas juntos.</p><div class="meta"><span>15 min</span><span>A partir de 6 anos</span></div></div></a>
+</div>
+  </section>
+</main>
+
+<section class="faixa" aria-labelledby="ler-titulo">
+  <div class="container">
+    <h2 id="ler-titulo">Ler, assistir e imaginar</h2>
+    <div class="grade">
+      <a class="cartao" href="#destaque-titulo"><img class="img" src="imagens/consultorio.jpg" alt="Mãe e filha lendo juntas"><div class="corpo"><span class="etiqueta">Leitura</span><h3>Uma pausa para olhar e contar</h3><p>Livros ilustrados para ler em voz alta e comentar juntos.</p></div></a>
+      <a class="cartao" href="#destaque-titulo"><img class="img" src="imagens/foto principal.jpg" alt="Pai e filho brincando"><div class="corpo"><span class="etiqueta">Vídeo</span><h3>Descubra uma ideia por dia</h3><p>Vídeos curtos para assistir e depois conversar sobre o que viram.</p></div></a>
+      <a class="cartao" href="#destaque-titulo"><img class="img" src="imagens/perfil.jpg" alt="Desenho para colorir"><div class="corpo"><span class="etiqueta">Imaginação</span><h3>Pense, crie, volte</h3><p>Propostas para imaginar, desenhar e retomar a conversa no dia seguinte.</p></div></a>
+    </div>
+  </div>
+</section>
+<div class="container">
+  <aside class="chamada">
+    <h2>Dúvidas também fazem parte do caminho.</h2>
+    <a class="botao" href="https://wa.me/5521965391980?text=Ol%C3%A1!%20Gostaria%20de%20conversar." target="_blank" rel="noopener noreferrer" title="Abrir conversa no WhatsApp">Fale comigo</a>
+  </aside>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="colunas">
+      <div>
+        <img class="logo-rodape" src="imagens/logosite.png" alt="Luiza Busnardo">
+        <p>Materiais e ideias para aprender em família.</p>
+      </div>
+      <div>
+        <strong>Páginas</strong>
+        <ul>
+          <li><a href="inicio.html">Início</a></li>
+          <li><a href="atividades.html">Atividades</a></li>
+          <li><a href="#ideias-titulo">Materiais</a></li>
+        </ul>
+      </div>
+      <div>
+        <strong>Ajuda</strong>
+        <ul>
+          <li><a href="inicio.html#sobre">Perguntas frequentes</a></li>
+          <li><a href="inicio.html#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <strong>Fale comigo</strong>
+        <ul>
+          <li><a href="https://wa.me/5521965391980?text=Ol%C3%A1!%20Gostaria%20de%20conversar." target="_blank" rel="noopener noreferrer" title="Abrir conversa no WhatsApp">WhatsApp</a></li>
+          <li><a href="https://www.instagram.com/fonoluizabusnardo" target="_blank" rel="noopener noreferrer" title="Abrir perfil no Instagram">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy">© 2026 Luiza Busnardo. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="js/atividades.js"></script>
+<script src="js/usuario.js"></script>
+</body>
+</html>

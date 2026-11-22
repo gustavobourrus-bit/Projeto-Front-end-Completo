@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Fredoka:wght@300..700&display=swap');
+
+:root {
+  --cabecalho: #f7f3f8;
+  --esquerda: #f3eef7;
+  --direita: #f9f8f9;
+  --primaria: #6d4c7e;
+  --escura: #4a3558;
+  --secundaria: #7a6a84;
+  --subtitulo: #8b7b9a;
+  --borda: #e7ddeb;
+  --branca: #ffffff;
+  --erro: #b66f7c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--escura);
+  background: var(--direita);
+  font-family: "Inter", sans-serif;
+}
+
+.cabecalho {
+  padding: 32px 24px 28px;
+  text-align: center;
+  background: rgba(247, 243, 248, 0.92);
+  border-bottom: 1px solid rgba(109, 76, 126, 0.14);
+  box-shadow: 0 8px 28px rgba(109, 76, 126, 0.08);
+  backdrop-filter: blur(12px);
+}
+
+.logotipo {
+  margin: 0;
+  font: 400 30px "Lora", serif;
+}
+
+.logotipo a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.logotipo a:hover {
+  text-decoration: none;
+}
+
+.subtitulo {
+  margin: 8px 0 0;
+  color: var(--subtitulo);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.estrutura {
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: calc(100vh - 125px);
+}
+
+.boas-vindas,
+.painel-cadastro {
+  padding: 64px 8%;
+}
+
+.boas-vindas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--esquerda);
+}
+
+.conteudo-boas-vindas {
+  width: min(100%, 500px);
+  margin: auto;
+}
+
+.boas-vindas h2,
+.formulario-cadastro h1 {
+  margin: 0;
+  font: 400 34px/1.2 "Lora", serif;
+}
+
+.boas-vindas h2 {
+  max-width: 430px;
+}
+
+.texto-boas-vindas {
+  max-width: 450px;
+  margin: 20px 0 28px;
+  color: var(--secundaria);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.imagem-boas-vindas {
+  width: 100%;
+  height: 245px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(74, 53, 88, 0.06);
+}
+
+blockquote {
+  margin: 24px 0 20px;
+  color: var(--escura);
+  font: italic 16px/1.7 "Lora", serif;
+}
+
+.nota-seguranca {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--secundaria);
+  font-size: 11px;
+}
+
+.nota-seguranca span {
+  color: var(--primaria);
+  font-size: 17px;
+}
+
+.painel-cadastro {
+  display: flex;
+  justify-content: center;
+  background: var(--direita);
+}
+
+.formulario-cadastro {
+  width: min(100%, 390px);
+}
+
+.destaque {
+  margin: 0 0 14px;
+  color: var(--primaria);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 1.8px;
+}
+
+.descricao {
+  margin: 16px 0 28px;
+  color: var(--secundaria);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.campo {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--escura);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="password"] {
+  width: 100%;
+  height: 48px;
+  padding: 0 14px;
+  color: var(--escura);
+  background: var(--branca);
+  border: 1px solid var(--borda);
+  border-radius: 8px;
+  outline: none;
+  font: 14px "Inter", sans-serif;
+  box-shadow: 0 2px 8px rgba(74, 53, 88, 0.025);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus {
+  border-color: var(--primaria);
+  box-shadow: 0 0 0 3px rgba(109, 76, 126, 0.1);
+}
+
+input.invalido {
+  border-color: var(--erro);
+  box-shadow: 0 0 0 3px rgba(182, 111, 124, 0.1);
+}
+
+.controle-senha {
+  position: relative;
+}
+
+.controle-senha input {
+  padding-right: 44px;
+}
+
+.alternar-senha {
+  position: absolute;
+  top: 13px;
+  right: 14px;
+  padding: 0;
+  color: var(--secundaria);
+  cursor: pointer;
+  background: none;
+  border: 0;
+  font-size: 17px;
+}
+
+.erro {
+  display: block;
+  min-height: 0;
+  margin-top: 5px;
+  color: var(--erro);
+  font-size: 11px;
+}
+
+button {
+  font: 500 13px "Inter", sans-serif;
+}
+
+.botao-principal {
+  width: 100%;
+  height: 48px;
+  color: var(--branca);
+  background: var(--primaria);
+  border: 1px solid var(--primaria);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.botao-principal:hover {
+  background: #593b68;
+}
+
+.mensagem {
+  min-height: 18px;
+  margin: 12px 0 0;
+  color: var(--primaria);
+  font-size: 12px;
+  text-align: center;
+}
+
+.divisor {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 28px 0 0;
+  color: var(--secundaria);
+  font-size: 12px;
+}
+
+.divisor::before,
+.divisor::after {
+  flex: 1;
+  height: 1px;
+  content: "";
+  background: var(--borda);
+}
+
+a {
+  color: var(--primaria);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.aviso {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 2;
+  max-width: 320px;
+  padding: 14px 18px;
+  color: var(--branca);
+  background: var(--escura);
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(74, 53, 88, 0.2);
+  font-size: 12px;
+  opacity: 0;
+  transform: translateY(12px);
+  pointer-events: none;
+  transition: 0.25s ease;
+}
+
+.aviso.visivel {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.aviso.sucesso {
+  background: var(--primaria);
+}
+
+@media (max-width: 760px) {
+  .estrutura {
+    grid-template-columns: 1fr;
+  }
+
+  .boas-vindas {
+    padding: 48px 24px;
+  }
+
+  .painel-cadastro {
+    padding: 48px 24px 56px;
+  }
+
+  .imagem-boas-vindas {
+    height: 210px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cabecalho { padding: 22px 16px 20px; }
+  .logotipo { font-size: 24px; }
+  .painel-cadastro { padding: 32px 18px 40px; }
+  .formulario-cadastro h1 { font-size: 28px; }
+  .aviso { left: 16px; right: 16px; max-width: none; }
+}
+
+body {
+  background:
+    radial-gradient(circle at 85% 8%, rgba(224, 166, 249, 0.20), transparent 24rem),
+    linear-gradient(135deg, #faf8fb 0%, #f5f1f7 100%);
+}
+
+.cabecalho {
+  position: relative;
+  box-shadow: 0 1px 0 rgba(74, 53, 88, 0.05);
+}
+
+.cabecalho::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  width: 46px;
+  height: 2px;
+  transform: translateX(-50%);
+  background: #bca6c7;
+  border-radius: 999px;
+}
+
+.painel-cadastro {
+  min-height: calc(100vh - 88px);
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.formulario-cadastro {
+  max-width: 520px;
+  padding: 42px;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(231, 221, 235, 0.95);
+  border-radius: 22px;
+  box-shadow: 0 24px 60px rgba(74, 53, 88, 0.10);
+}
+
+.formulario-cadastro h1 {
+  font-size: 38px;
+  letter-spacing: -1px;
+}
+
+.campo {
+  margin-bottom: 12px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="password"] {
+  height: 52px;
+  border-radius: 10px;
+  background: #fdfcfd;
+  transition: 0.2s ease;
+}
+
+input:focus {
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(109, 76, 126, 0.09);
+  transform: translateY(-1px);
+}
+
+.botao-principal {
+  height: 52px;
+  border-radius: 999px;
+  box-shadow: 0 10px 24px rgba(109, 76, 126, 0.18);
+}
+
+.botao-principal:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(109, 76, 126, 0.24);
+}
+
+@media (max-width: 560px) {
+  .formulario-cadastro {
+    padding: 28px 20px;
+  }
+
+  a,
+  button,
+  input,
+  .botao-principal,
+  .alternar-senha,
+  .divisor a {
+    min-height: 48px;
+  }
+
+  .alternar-senha {
+    min-width: 44px;
+  }
+}
+
+p {
+  font-family: "Fredoka", "DM Sans", "Inter", system-ui, sans-serif;
+}
+
+body {
+  background:
+    radial-gradient(circle at 8% 12%, rgba(237, 227, 245, 0.34), transparent 22rem),
+    radial-gradient(circle at 92% 22%, rgba(218, 205, 229, 0.48), transparent 24rem),
+    #fbf9fc;
+}
+
+.painel-cadastro {
+  background: linear-gradient(145deg, rgba(238, 232, 244, 0.42), rgba(255, 253, 248, 0.78));
+}
+
+.formulario-cadastro {
+  border-color: #e1d7e7;
+  box-shadow: 0 24px 60px rgba(73, 54, 79, 0.10);
+}
