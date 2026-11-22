@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/login.css"/>
+  <title>Login | Luiza Busnardo</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+
+  
+</head>
+<body>
+  <header class="cabecalho">
+    <h1 class="logotipo">Luiza Busnardo</h1>
+    <p class="subtitulo">CONSULTÓRIO FONOAUDIOLÓGICO</p>
+  </header>
+
+  <main class="estrutura">
+    <section class="boas-vindas">
+      <div class="conteudo-boas-vindas">
+        <h2>Seu espaço de cuidado também está aqui.</h2>
+
+        <p class="texto-boas-vindas">
+          Um ambiente acolhedor para acompanhar cada etapa da sua jornada
+          de comunicação, escuta e desenvolvimento.
+        </p>
+
+        <img
+          class="imagem-boas-vindas"
+          src="img/consultorio.jpg"
+          alt="Profissional em um ambiente acolhedor de atendimento"
+        />
+
+        <blockquote>
+          “Cuidar da comunicação é também cuidar das conexões que tornam
+          a vida mais leve.”
+        </blockquote>
+
+        
+
+        <div class="nota-seguranca">
+          <span aria-hidden="true">♢</span>
+          <span>Seu espaço é seguro, acolhedor e feito para você.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="painel-login">
+      <form class="formulario-login" id="formularioLogin">
+        <p class="destaque">BEM-VINDO DE VOLTA</p>
+        <h1>Entre na sua conta.</h1>
+
+        <p class="descricao">
+          Acesse seu espaço para acompanhar seus atendimentos e informações.
+        </p>
+
+        <p class="mensagem" id="mensagem" role="alert" aria-live="assertive"></p>
+
+        <div class="campo">
+          <label for="usuario">Login</label>
+          <input id="usuario" name="login" type="text" placeholder="Digite seu login" required />
+          <span class="icone-campo" aria-hidden="true">✉</span>
+        </div>
+
+        <div class="campo">
+          <label for="senha">Senha</label>
+          <input id="senha" name="password" type="password" placeholder="Digite sua senha" required />
+          <button class="alternar-senha" type="button" aria-label="Mostrar senha">◉</button>
+        </div>
+
+        <div class="opcoes">
+          <label class="lembrar">
+            <input type="checkbox" name="remember" />
+            Manter conectado
+          </label>
+          <a href="#">Esqueci minha senha</a>
+        </div>
+
+        <button class="botao-principal" type="submit">Entrar ↗</button>
+
+        <div class="divisor">Ainda não tem uma conta?</div>
+
+        <a class="botao-secundario" href="cadastro.html">Criar minha conta</a>
+
+        <p class="ajuda">Precisa de ajuda? <a href="#">Fale com o espaço</a></p>
+        <p class="informacoes-legais"><a href="#">Privacidade</a> · <a href="#">Termos de uso</a></p>
+
+      </form>
+    </section>
+  </main>
+
+  <script src="js/login.js"></script>
+</body>
+</html>
